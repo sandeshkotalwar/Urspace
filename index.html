@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urspace - Digital Nomad Workspaces</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Urspace</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+   
+    <div class="menu-toggle">&#9776;</div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1>Discover Your Ideal Workspace</h1>
+        <div class="search-box">
+          <select>
+            <option>Pune, Maharashtra</option>
+            <option>Banglore, Karnataka</option>
+            <option>Hydrabad, Telangna</option>
+          </select>
+          <button>Get Started</button>
+        </div>
+        <p class="subtext">
+          Live the digital nomad lifestyle to the fullest with workspaces designed specifically for your needs. Enjoy the freedom to choose inspiring, comfortable, and well-equipped workspaces in different corners of the globe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="workspace-wrapper">
+      
+      <!-- Left Side Text -->
+      <div class="workspace-left">
+        <p>Services<p>
+        <h2>Workspace<br>Options for<br>Every Need</h2>
+        <a href="#" class="workspace-btn">View All Space →</a>
+      </div>
+  
+      <!-- Right Side Card Slider -->
+      <div class="workspace-right">
+        <div class="card-slider">
+
+          <div class="workspace-card">
+            <img src="./assets/ChatGPT Image Apr 11, 2025, 01_40_26 AM.png" alt="Private Office" />
+            <h3>Private Office</h3>
+            <p>Whatever your team size, our office is your seamless, move-in-ready solution</p>
+            <span><i class="ri-user-line"></i> 1 Person</span>
+          </div>
+
+          <div class="workspace-card">
+            <img src="./assets/ChatGPT Image Apr 11, 2025, 01_43_14 AM.png" alt="Private Office" />
+            <h3>Dedicated Desk</h3>
+            <p>Your own dedicated workplace within a collabrative shared office enivorment</p>
+            <span><i class="ri-group-line"></i> 1-5 Persons</span>
+          </div>
+
+            <div class="workspace-card">
+              <img src="./assets/ChatGPT Image Apr 11, 2025, 01_45_39 AM.png" alt="Private Office" />
+              <h3>Meeting Room</h3>
+              <p>Reserve private rooms an hourly basis can be booked by hour 1-20</p>
+              <span><i class="ri-group-line"></i> 1-5 Persons</span>
+            </div>
+          
+         
+  
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about">
+    <h3>About Us</h3>
+    <p>At Urspace, we design and build modern, functional office spaces that inspire productivity and reflect your company's identity. From layout planning to complete execution, we create workplaces that work better for your team, your culture, and your goals.</p>
+    </div>
+    <div class="faces-row">
+      <img src="./assets/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="Face 1" />
+      <img src="./assets/taylor-8Vt2haq8NSQ-unsplash.jpg" alt="Face 1" />
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="form-container">
+      <h2>Let us help you find your ideal space</h2>
+      <p>Complete the form, and we’ll reach out soon.</p>
+      <form>
+        <div class="form-grid">
+          <input type="text" placeholder="Full name*" required />
+          <input type="email" placeholder="Email Address*" required />
+          <input type="text" placeholder="Company name*" />
+          <input type="text" placeholder="Phone Number*" required />
+          <input type="text" placeholder="Location*" />
+          <input type="text" placeholder="How many members?" />
+        </div>
+        <p class="disclaimer">
+          By clicking the button below, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        <button type="submit" class="submit-btn">Get Started</button>
+      </form>
+    </div>
+  </section>
+
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    
+  </script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDdArjH5LlXeMv9fWXNOiV8JRtLKdjvz7Q",
+      authDomain: "urspace-c99bb.firebaseapp.com",
+      projectId: "urspace-c99bb",
+      storageBucket: "urspace-c99bb.firebasestorage.app",
+      messagingSenderId: "103479662204",
+      appId: "1:103479662204:web:1832629173e2f0d8915bf9",
+      measurementId: "G-XYTGDZS4XF"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
